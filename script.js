@@ -1,4 +1,4 @@
 // Do your work in this file.
-for (i = 0; i < cars.length; i++) { 
-    text += cars[i] + "<br>";
-}
+
+// for (var i = 0; i<=4; i++) {
+//   boxes[i].addEventListener("click", boxClicked_ + i);
