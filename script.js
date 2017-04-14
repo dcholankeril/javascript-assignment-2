@@ -31,7 +31,7 @@ switch (numBoxes - 1 / 100 | 0) {
 
 function clickHandler() {
     this.style.backgroundColor = color;
-//    this.classList.toggle('clicked');//
+    this.classList.toggle('clicked');
 }
 
 for (var i = 0; i < numBoxes; i++) {
