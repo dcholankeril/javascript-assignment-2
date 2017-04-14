@@ -1,13 +1,8 @@
-// Do your work in this file.
-
-// for (var i = 0; i<=4; i++) {
-//   boxes[i].addEventListener("click", boxClicked_ + i);
-
 var boxes = document.getElementsByClassName('box');
 var numBoxes = boxes.length;
 var color = 'blue'
 
-switch (numBoxes / 100 | 0) {
+switch (numBoxes - 1 / 100 | 0) {
     case 2:
         color = 'yellow'
         break;
@@ -34,12 +29,12 @@ switch (numBoxes / 100 | 0) {
 }
 
 
-clickHandler = function() {
+function clickHandler() {
     this.style.backgroundColor = color;
-    this.classList.toggle('clicked');
+//    this.classList.toggle('clicked');//
 }
 
 for (var i = 0; i < numBoxes; i++) {
     var box = boxes[i];
-    box.addEventListener('click', clickHandler);
+    box.addEventListener("click", clickHandler);
 }
